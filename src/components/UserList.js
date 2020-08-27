@@ -1,6 +1,3 @@
-/**
- * Created by chalosalvador on 8/2/20
- */
 import React from 'react';
 
 const UserList = () => {
@@ -9,15 +6,15 @@ const UserList = () => {
         console.log( 'inicializando estado' );
         return [
             {
-                name: 'Gabriel ',
-                lastname: 'Ibujés'
-            },
-            {
                 name: 'Daniela',
                 lastname: 'Tinillo'
             },
             {
-                name: 'Benjamín',
+                name: 'Gabriel',
+                lastname: 'Ibujés'
+            },
+            {
+                name: 'Benjamin',
                 lastname: 'Ibujés'
             }
         ];
@@ -48,7 +45,7 @@ const UserList = () => {
                 <label htmlFor='lastname'>Apellido</label>
                 <input type='text' id='lastname' />
 
-                <button onClick={ handleAddUser }>Agregar un usuario</button>
+                <button onClick={ handleAddUser }>Agregar usuario</button>
             </div>
             <h1>Lista de usuarios ({ users.length } en total)</h1>
             <ul>
